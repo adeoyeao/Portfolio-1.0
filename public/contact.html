@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./images/icons/logo.svg" type="image/x-icon">
+    <script src="./scripts/index.js" defer type="module"></script>
+    <title>Alfred Adeoye || Contact Me</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <svg
+        class="logo"
+        width="42"
+        height="37"
+        viewBox="0 0 157 136"
+        fill="#33323d"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M69.2624 16L78.5 0L87.7376 16L147.638 119.75L156.875 135.75H138.4H18.5999H0.124702L9.36231 119.75L69.2624 16ZM27.8375 119.75L78.5 32L129.162 119.75H112.419L112.131 119.25L87.7376 77L78.5 61L69.2624 77L44.8693 119.25L44.5807 119.75H27.8375ZM63.3446 119.25L78.5 93L93.6554 119.25H63.3446Z"
+        />
+      </svg>
+      <button class="menu-btn"></button>
+      <ul class="navbar">
+        <li><a href="/">Home</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/contact-me">Contact Me</a></li>
+      </ul>
+    </header>
+
+    <section id="get-touch">
+      <h2 id="get-touch-head">Get in Touch</h2>
+      <p id="get-touch-copy">
+        Tell me a little about yourself and your project via the contact form below and I’ll aim to arrange a follow-up call within 24 hours to discuss how best
+        I can help you. <br><br>In the meantime feel free to check out my coding skills and work experience via the links below.
+      </p>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="24"
+        id="github-icon"
+      >
+        <a
+          xlink:href="https://www.github.com/adeoyeao?tab=repositories"
+          target="_blank"
+        >
+          <path
+            fill="#33323D"
+            d="M12.5 0C5.594 0 0 5.51 0 12.305c0 5.437 3.581 10.048 8.547 11.674.625.116.854-.265.854-.592 0-.292-.01-1.066-.016-2.092-3.477.742-4.21-1.65-4.21-1.65-.569-1.42-1.39-1.8-1.39-1.8-1.133-.764.087-.748.087-.748 1.255.086 1.914 1.268 1.914 1.268 1.115 1.881 2.927 1.338 3.641 1.024.113-.797.434-1.338.792-1.646-2.776-.308-5.694-1.366-5.694-6.08 0-1.343.484-2.44 1.286-3.302-.14-.31-.562-1.562.11-3.256 0 0 1.047-.33 3.437 1.261 1-.273 2.063-.409 3.125-.415 1.063.006 2.125.142 3.125.415 2.375-1.591 3.422-1.261 3.422-1.261.672 1.694.25 2.945.125 3.256.797.861 1.281 1.959 1.281 3.302 0 4.727-2.921 5.767-5.703 6.07.438.369.844 1.123.844 2.276 0 1.647-.016 2.97-.016 3.37 0 .322.22.707.86.584 5-1.615 8.579-6.23 8.579-11.658C25 5.509 19.403 0 12.5 0z"
+          />
+        </a>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
+        <a
+          xlink:href="http://www.linkedin.com/in/alfred-adeoye-37509b81"
+          target="_blank"
+        >
+          <path
+            fill="#33323D"
+            d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h19.2c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0zM7.2 20.4H3.6V9.6h3.6v10.8zM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zm15 12.84h-3.6v-6.36c0-.96-.84-1.8-1.8-1.8-.96 0-1.8.84-1.8 1.8v6.36H9.6V9.6h3.6v1.44c.6-.96 1.92-1.68 3-1.68 2.28 0 4.2 1.92 4.2 4.2v6.84z"
+          />
+        </a>
+      </svg>
+
+    </section>
+
+    <section id="contact-form">
+      <h2>Contact Me</h2>
+      <form action="/contact" method="POST">
+        <p>Name</p>
+        <div class="input-container">
+          <label for="name" id="name-label"></label>
+          <input type="text" name="name" id="name" placeholder="Jane Doe" />
+        </div>
+        <p>Email Address</p>
+        <div class="input-container">
+          <label for="email" id="email-label"></label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+          />
+        </div>
+        <p>Message</p>
+        <div class="input-container">
+          <label for="message" id="message-label"></label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="6"
+            placeholder="How can I help?"
+          ></textarea>
+        </div>
+        <input type="submit" id="submit" value="Send Message" class="primary-btn" />
+      </form>
+    </section>
+
+    <footer>
+      <svg
+        class="white-logo"
+        width="42"
+        height="37"
+        viewBox="0 0 157 136"
+        fill="#ffffff"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M69.2624 16L78.5 0L87.7376 16L147.638 119.75L156.875 135.75H138.4H18.5999H0.124702L9.36231 119.75L69.2624 16ZM27.8375 119.75L78.5 32L129.162 119.75H112.419L112.131 119.25L87.7376 77L78.5 61L69.2624 77L44.8693 119.25L44.5807 119.75H27.8375ZM63.3446 119.25L78.5 93L93.6554 119.25H63.3446Z"
+        />
+      </svg>
+
+      <nav>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/portfolio">PORTFOLIO</a></li>
+        <li><a href="/contact-me">CONTACT ME</a></li>
+      </nav>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
+        <a
+          xlink:href="https://www.github.com/adeoyeao?tab=repositories"
+          target="_blank"
+        >
+          <path
+            fill="#ffffff"
+            d="M12.5 0C5.594 0 0 5.51 0 12.305c0 5.437 3.581 10.048 8.547 11.674.625.116.854-.265.854-.592 0-.292-.01-1.066-.016-2.092-3.477.742-4.21-1.65-4.21-1.65-.569-1.42-1.39-1.8-1.39-1.8-1.133-.764.087-.748.087-.748 1.255.086 1.914 1.268 1.914 1.268 1.115 1.881 2.927 1.338 3.641 1.024.113-.797.434-1.338.792-1.646-2.776-.308-5.694-1.366-5.694-6.08 0-1.343.484-2.44 1.286-3.302-.14-.31-.562-1.562.11-3.256 0 0 1.047-.33 3.437 1.261 1-.273 2.063-.409 3.125-.415 1.063.006 2.125.142 3.125.415 2.375-1.591 3.422-1.261 3.422-1.261.672 1.694.25 2.945.125 3.256.797.861 1.281 1.959 1.281 3.302 0 4.727-2.921 5.767-5.703 6.07.438.369.844 1.123.844 2.276 0 1.647-.016 2.97-.016 3.37 0 .322.22.707.86.584 5-1.615 8.579-6.23 8.579-11.658C25 5.509 19.403 0 12.5 0z"
+          />
+        </a>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
+        <a
+          xlink:href="http://www.linkedin.com/in/alfred-adeoye-37509b81"
+          target="_blank"
+        >
+          <path
+            fill="#ffffff"
+            d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h19.2c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0zM7.2 20.4H3.6V9.6h3.6v10.8zM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zm15 12.84h-3.6v-6.36c0-.96-.84-1.8-1.8-1.8-.96 0-1.8.84-1.8 1.8v6.36H9.6V9.6h3.6v1.44c.6-.96 1.92-1.68 3-1.68 2.28 0 4.2 1.92 4.2 4.2v6.84z"
+          />
+        </a>
+      </svg>
+    </footer>
+  </body>
+</html>
